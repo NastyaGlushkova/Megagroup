@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="megagroup.css" type="text/css" rel="stylesheet">
+    <!--[if IE 8]><link href="megagroup-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <title></title>
+</head>
+<body>
+    <div id="background">
+        <header>
+            <h3>Оформление письма</h3>
+        </header>
+        <nav>
+            <ul id="navigation">
+                <li>
+                    Менеджеру
+                </li>
+                <li id="for-director">
+                    Директору
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <div id="row1">
+                <p id="subject">
+                    Тема письма:
+                    <div id="new-select-style">
+                        <select>
+                            <option>Тема 1</option>
+                            <option>Тема 2</option>
+                            <option>Тема 3</option>
+                        </select>
+                    </div>
+                </p>
+                <p>
+                    Введите ваши контактные данные
+                </p>
+                <form name="form1">
+                    <!--[if IE 8]>
+                    <input onfocus="if(this.value=='Ф.И.О.') this.value='';" onblur="if(!this.value) this.value='Ф.И.О.';" type="text" value="Ф.И.О." id="fio1" class="form-style" name="fio"/>         
+                    <input onfocus="if (this.value == 'Контактный e-mail') this.value = '';" onblur="    if (!this.value) this.value = 'Контактный e-mail';" type="text" value="Контактный e-mail" id="email1" class="form-style" name="email" type="email" />
+                    <input onfocus="if (this.value == 'Телефон') this.value = '';" onblur="    if (!this.value) this.value = 'Телефон';" type="text" value="Телефон" id="phone1" class="form-style" name="phone" type="text" />
+                    <![endif]-->
+                    <input type="text" id="fio" class="form-style" name="fio" placeholder="Ф.И.О." />
+                    <input id="email" class="form-style" name="email" type="email" placeholder="Контктный e-mail" />
+                    <input id="phone" class="form-style" name="phone" type="text" placeholder="Телефон" />
+                </form>
+            </div>
+            <div id="row2">
+                <form name="form2">
+                    <!--[if IE 8]>
+                    <textarea id="textarea" onfocus="if(this.value=='Текст обращения') this.value='';" onblur="if(!this.value) this.value='Текст обращения';" type="text" value="Текст обращения" name="message"></textarea>
+                    <![endif]-->
+                    <textarea id="textarea2" placeholder="Текст обращения" name="message"></textarea>
+                    <input class="checkbox" id="check1" type="checkbox" name="quickly" checked /><label for="check1">Срочно</label>
+                    <input class="checkbox" id="check2" type="checkbox" name="coll-after" /><label for="check2">Позвонить после обработки</label>
+                    <p><button type="submit">Отправить</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
