@@ -51,7 +51,7 @@ h3 {
     width:466px;
     position:relative;
     display:inline-block;
-    top:-34px;
+    top:-36px;
 }
 
 #content p:first-of-type {
@@ -65,13 +65,11 @@ h3 {
 #new-select-style {
     width:168px;
     height:27px;
-    border:none;
     border-color:#bfbfbf;
     border-radius:7px;
     border-width:1px;
     overflow:hidden;
-    background-image:url(images/select.png);
-    background-repeat:no-repeat;
+    background:url(images/select.png) no-repeat;
     display:inline-block;
     margin:16px 0 0 12px;
 }
@@ -81,6 +79,7 @@ h3 {
     padding:5px;
     width:189px;
     background:transparent;
+    outline:none;
 }
 
 #fio {
@@ -89,18 +88,21 @@ h3 {
 }
 
 .form-style, textarea {
-    border:solid;
-    border-color:#bfbfbf;
+    border:1px solid #bfbfbf;
     border-radius:8px;
-    border-width:1px;
     padding:5px;
     box-shadow:#eaeaea 1px 1px 3px inset;
     width:213px;
     resize:none;
+    outline:none;
+}
+
+.form-style:focus, textarea:focus, select:focus {
+    box-shadow:#BEBEBE 1px 1px 3px inset;
 }
 
 .form-style:focus::-webkit-input-placeholder {
-    color: transparent
+    color: transparent;
 }
 
 .form-style:focus::-moz-placeholder {
@@ -187,18 +189,14 @@ textarea:focus:-ms-input-placeholder {
 
 .checkbox:not(checked) + label {
     position: relative;
-    padding: 3px 10px 8px 30px;
-    background-image: url(images/not-checked.png);
-    background-repeat: no-repeat;
-    background-position:4px;
+    padding: 5px 10px 8px 30px;
+    background: url(images/not-checked.png) no-repeat 4px;
     }
 
 .checkbox:checked + label {
     position: relative;
-    padding: 3px 10px 8px 30px;
-    background-image: url(images/checked.png);
-    background-repeat: no-repeat;
-    background-position:0px;
+    padding: 5px 10px 8px 30px;
+    background: url(images/checked.png) no-repeat 0px;
     }
 
 #row2 button {    
@@ -214,7 +212,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 #row2 p:last-of-type {
-    display:inherit;
+    display:block;
     margin-top:15px;
     padding-top:15px;
 }
