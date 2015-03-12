@@ -16,23 +16,22 @@ h3 {
     padding-top:17px;
 }
 
-#navigation {
+#tabs {
     margin:16px 0 0 0;
     padding-left:28px;
 }
 
-#navigation li {
+#tabs li {
     display:inline-block;
     text-align:center;
     width:114px;
-    height:23px;
-    padding-top:9px;
+    height:32px;
     background-color:#ffffff;
     margin-right:9px;
     border-radius:8px 8px 0 0;
 }
 
-#navigation li:last-of-type {
+#tabs li:last-of-type {
     background-color:#f8f8f8;
     color:#959595;
 }
@@ -47,7 +46,7 @@ h3 {
     position:relative;
 }
 
-#content #row1 {
+#content #toManager, #content #toDirector {
     width:466px;
     position:relative;
     display:inline-block;
@@ -74,7 +73,7 @@ h3 {
     margin:16px 0 0 12px;
 }
 
-#row1 #new-select-style select {
+#toManager #new-select-style select, #toDirector #new-select-style select {
     border:none;
     padding:5px;
     width:189px;
@@ -215,4 +214,37 @@ textarea:focus:-ms-input-placeholder {
     display:block;
     margin-top:15px;
     padding-top:15px;
+}
+
+a {
+    color:#959595;
+    text-decoration:none;
+    width:114px;
+    height:23px;
+    padding-top:9px;
+    display:inline-block;
+    border-radius:8px 8px 0 0;
+}
+
+ul#tabs li a.selected {
+    color:black;
+    background-color:#ffffff;
+}
+
+ul#tabs li a:hover {
+    background-color:#ffffff;
+    color:black;
+}
+
+ul#tabs li {
+    background-color:#f8f8f8;
+}
+
+div.tabContent.hide {
+    display:none;
+}
+
+#toDirector {
+    position:absolute;
+    top:-300px;
 }
