@@ -36,7 +36,7 @@ h3 {
     color:#959595;
 }
 
-#content {
+.content {
     width:938px;
     height:220px;
     background-color:#ffffff;
@@ -46,14 +46,14 @@ h3 {
     position:relative;
 }
 
-#content #toManager, #content #toDirector {
+.content .row1 {
     width:466px;
     position:relative;
     display:inline-block;
     top:-36px;
 }
 
-#content p:first-of-type {
+.content p:first-of-type {
     padding-top:0;
     margin:0;
     display:inline-block;
@@ -61,7 +61,7 @@ h3 {
     top:-8px;
 }
 
-#new-select-style {
+.new-select-style {
     width:168px;
     height:27px;
     border-color:#bfbfbf;
@@ -73,7 +73,7 @@ h3 {
     margin:16px 0 0 12px;
 }
 
-#toManager #new-select-style select, #toDirector #new-select-style select {
+.row1 .new-select-style select {
     border:none;
     padding:5px;
     width:189px;
@@ -120,7 +120,7 @@ form #phone {
     float:right;
 }
 
-#content #row2 {
+.content .row2 {
     display:inline-block;
     position:relative;
     top:15px;
@@ -128,7 +128,7 @@ form #phone {
     height:200px;
 }
  
-#row2 textarea {
+.row2 textarea {
     width:435px;
     height:92px;
     display:block;
@@ -170,7 +170,7 @@ textarea:focus:-ms-input-placeholder {
     color: transparent
 }
 
-#row2 label {
+.row2 label {
     font-size:11px;
 }
 
@@ -198,7 +198,7 @@ textarea:focus:-ms-input-placeholder {
     background: url(images/checked.png) no-repeat 0px;
     }
 
-#row2 button {    
+.row2 button {    
     width:168px;
     height:40px;
     background-color:#f4842c;
@@ -210,7 +210,7 @@ textarea:focus:-ms-input-placeholder {
     cursor:pointer;
 }
 
-#row2 p:last-of-type {
+.row2 p:last-of-type {
     display:block;
     margin-top:15px;
     padding-top:15px;
@@ -242,9 +242,4 @@ ul#tabs li {
 
 div.tabContent.hide {
     display:none;
-}
-
-#toDirector {
-    position:absolute;
-    top:-300px;
 }

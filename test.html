@@ -18,74 +18,78 @@
                 <li id="for-director"><a href="#toDirector">Директору</a></li>
             </ul>
         </nav>
-        <form id="content">
-            <div class="tabContent" id="toManager">
-                <p id="subject">
-                    Тема письма:
-                    <div id="new-select-style">
-                        <select>
-                            <option>Тема 1</option>
-                            <option>Тема 2</option>
-                            <option>Тема 3</option>
-                        </select>
-                    </div>
-                </p>
-                <p>
-                    Введите ваши контактные данные
-                </p>
+        <div class="tabContent" id="toManager">
+            <form class="content">
+                <div class="row1">
+                    <p id="subject">
+                        Тема письма:
+                        <div class="new-select-style">
+                            <select>
+                                <option>Тема 1</option>
+                                <option>Тема 2</option>
+                                <option>Тема 3</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        Введите ваши контактные данные
+                    </p>
                     <!--[if IE 8]>
-                    <input onfocus="if(this.value=='Ф.И.О.') this.value='';" onblur="if(!this.value) this.value='Ф.И.О.';" type="text" value="Ф.И.О." id="fio1" class="form-style" name="fio"/>         
-                    <input onfocus="if (this.value == 'Контактный e-mail') this.value = '';" onblur="    if (!this.value) this.value = 'Контактный e-mail';" type="text" value="Контактный e-mail" id="email1" class="form-style" name="email" type="email" />
-                    <input onfocus="if (this.value == 'Телефон') this.value = '';" onblur="    if (!this.value) this.value = 'Телефон';" type="text" value="Телефон" id="phone1" class="form-style" name="phone" type="text" />
-                    <![endif]-->
+                <input onfocus="if(this.value=='Ф.И.О.') this.value='';" onblur="if(!this.value) this.value='Ф.И.О.';" type="text" value="Ф.И.О." id="fio1" class="form-style" name="fio"/>
+                <input onfocus="if (this.value == 'Контактный e-mail') this.value = '';" onblur="    if (!this.value) this.value = 'Контактный e-mail';" type="text" value="Контактный e-mail" id="email1" class="form-style" name="email" type="email" />
+                <input onfocus="if (this.value == 'Телефон') this.value = '';" onblur="    if (!this.value) this.value = 'Телефон';" type="text" value="Телефон" id="phone1" class="form-style" name="phone" type="text" />
+                <![endif]-->
                     <input type="text" id="fio" class="form-style" name="fio" placeholder="Ф.И.О." />
                     <input id="email" class="form-style" name="email" type="email" placeholder="Контктный e-mail" />
                     <input id="phone" class="form-style" name="phone" type="text" placeholder="Телефон" />
-            </div>
-            <div id="row2">
-                <!--[if IE 8]>
+                </div>
+                <div class="row2">
+                    <!--[if IE 8]>
                 <textarea id="textarea" onfocus="if(this.value=='Текст обращения') this.value='';" onblur="if(!this.value) this.value='Текст обращения';" type="text" value="Текст обращения" name="message"></textarea>
                 <![endif]-->
-                <textarea id="textarea2" placeholder="Текст обращения" name="message"></textarea>
-                <input class="checkbox" id="check1" type="checkbox" name="quickly" checked /><label for="check1">Срочно</label>
-                <input class="checkbox" id="check2" type="checkbox" name="coll-after" /><label for="check2">Позвонить после обработки</label>
-                <p><button type="submit">Отправить</button></p>
-            </div>
-        </form>
-        <form id="content">
-            <div class="tabContent" id="toDirector">
-                <p id="subject">
-                    Тема Вашего письма:
-                    <div id="new-select-style">
-                        <select>
-                            <option>Тема 1</option>
-                            <option>Тема 2</option>
-                            <option>Тема 3</option>
-                        </select>
-                    </div>
-                </p>
-                <p>
-                    Введите ваши контактные данные
-                </p>
-                <!--[if IE 8]>
-            <input onfocus="if(this.value=='Ф.И.О.') this.value='';" onblur="if(!this.value) this.value='Ф.И.О.';" type="text" value="Ф.И.О." id="fio1" class="form-style" name="fio"/>
-            <input onfocus="if (this.value == 'Контактный e-mail') this.value = '';" onblur="    if (!this.value) this.value = 'Контактный e-mail';" type="text" value="Контактный e-mail" id="email1" class="form-style" name="email" type="email" />
-            <input onfocus="if (this.value == 'Телефон') this.value = '';" onblur="    if (!this.value) this.value = 'Телефон';" type="text" value="Телефон" id="phone1" class="form-style" name="phone" type="text" />
-            <![endif]-->
-                <input type="text" id="fio" class="form-style" name="fio" placeholder="Ф.И.О." />
-                <input id="email" class="form-style" name="email" type="email" placeholder="Контктный e-mail" />
-                <input id="phone" class="form-style" name="phone" type="text" placeholder="Телефон" />
-            </div>
-            <div id="row2">
-                <!--[if IE 8]>
-            <textarea id="textarea" onfocus="if(this.value=='Текст обращения') this.value='';" onblur="if(!this.value) this.value='Текст обращения';" type="text" value="Текст обращения" name="message"></textarea>
-            <![endif]-->
-                <textarea id="textarea2" placeholder="Текст обращения" name="message"></textarea>
-                <input class="checkbox" id="check1" type="checkbox" name="quickly" checked /><label for="check1">Срочно</label>
-                <input class="checkbox" id="check2" type="checkbox" name="coll-after" /><label for="check2">Позвонить после обработки</label>
-                <p><button type="submit">Отправить</button></p>
-            </div>
-        </form>
+                    <textarea id="textarea2" placeholder="Текст обращения" name="message"></textarea>
+                    <input class="checkbox" id="check1" type="checkbox" name="quickly" checked="checked" /><label for="check1">Срочно</label>
+                    <input class="checkbox" id="check2" type="checkbox" name="coll-after" /><label for="check2">Позвонить после обработки</label>
+                    <p><button type="submit">Отправить</button></p>
+                </div>
+            </form>
+        </div>
+        <div class="tabContent" id="toDirector">
+            <form class="content">
+                <div class="row1">
+                    <p id="subject">
+                        Тема Вашего письма:
+                        <div class="new-select-style">
+                            <select>
+                                <option>Тема 1</option>
+                                <option>Тема 2</option>
+                                <option>Тема 3</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        Введите ваши контактные данные
+                    </p>
+                    <!--[if IE 8]>
+                <input onfocus="if(this.value=='Ф.И.О.') this.value='';" onblur="if(!this.value) this.value='Ф.И.О.';" type="text" value="Ф.И.О." id="fio1" class="form-style" name="fio"/>
+                <input onfocus="if (this.value == 'Контактный e-mail') this.value = '';" onblur="    if (!this.value) this.value = 'Контактный e-mail';" type="text" value="Контактный e-mail" id="email1" class="form-style" name="email" type="email" />
+                <input onfocus="if (this.value == 'Телефон') this.value = '';" onblur="    if (!this.value) this.value = 'Телефон';" type="text" value="Телефон" id="phone1" class="form-style" name="phone" type="text" />
+                <![endif]-->
+                    <input type="text" id="fio" class="form-style" name="fio" placeholder="Ф.И.О." />
+                    <input id="email" class="form-style" name="email" type="email" placeholder="Контктный e-mail" />
+                    <input id="phone" class="form-style" name="phone" type="text" placeholder="Телефон" />
+                </div>
+                <div class="row2">
+                    <!--[if IE 8]>
+                <textarea id="textarea" onfocus="if(this.value=='Текст обращения') this.value='';" onblur="if(!this.value) this.value='Текст обращения';" type="text" value="Текст обращения" name="message"></textarea>
+                <![endif]-->
+                    <textarea id="textarea2" placeholder="Текст обращения" name="message"></textarea>
+                    <input class="checkbox" id="check3" type="checkbox" name="quickly1" checked="checked" /><label for="check3">Срочно</label>
+                    <input class="checkbox" id="check4" type="checkbox" name="coll-after1" /><label for="check4">Позвонить после обработки</label>
+                    <p><button type="submit">Отправить</button></p>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="Script1.js" type="text/javascript"></script>
 </body>
